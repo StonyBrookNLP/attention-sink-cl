@@ -2,7 +2,7 @@
 This is the repository for the COLM 24 paper: [Does RoBERTa Perform Better than BERT in Continual Learning: An Attention Sink Perspective](https://openreview.net/pdf/871a164cc29448a6b9d44abc428bcd4529d60d16.pdf).
 
 ### Abstract
-Continual learning (CL) aims to train models that can sequentially learn new tasks without forgetting previous tasks' knowledge. 
+This project studies the Continual learning (CL) problem with pre-trained language models. 
 * Pe-trained models may allocate high attention scores to some 'sink' tokens, such as *[SEP]* tokens, which are ubiquitous across various tasks. Such attention sinks may lead to models' over-smoothing in single-task learning and interference in sequential tasks’ learning, downgrading models' CL capacities.
 * We propose a **pre-scaling mechanism** that encourages attention diversity across all tokens. Specifically, it first scales the task's attention to the non-sink tokens in a probing stage, and then fine-tunes the model with scaling.
 * Experiments show that pre-scaling yields substantial improvements in CL without experience replay, or progressively storing parameters from previous tasks.  
